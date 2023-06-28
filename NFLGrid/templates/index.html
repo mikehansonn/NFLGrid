@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Recommendations</title>
+    <style>
+        .recommendations {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Name Recommendations</h1>
+    <form action="/recommend" method="post">
+        <input type="text" name="name" placeholder="Enter a name">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if recommendations %}
+        <div class="recommendations">
+            <h2>Recommendations:</h2>
+            <ul>
+                {% for name in recommendations %}
+                    <li>{{ name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>

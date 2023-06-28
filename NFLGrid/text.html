@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links Example</title>
+  <style>
+    /* Center the container */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Style for the links container */
+    .links-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .links-container a {
+      padding: 10px;
+      text-align: center; /* Center the link text */
+    }
+
+    /* Adjust the second link position */
+    .links-container .center-link {
+      margin-left: 10px; /* Adjust the desired amount of spacing */
+    }
+  </style>
+</head>
+<body>
+  <div class="links-container">
+    <a href="#" class="link">
+      <center>Link on the Left</center>
+    </a>
+    <a href="#" class="link center-link">
+      <span style="margin-left: auto;">Link in the Middle</span>
+    </a>
+  </div>
+</body>
+</html>
